@@ -1,0 +1,52 @@
+<div class="ui inverted segment">
+    <div class="ui inverted five cards">
+    <div class="card">
+        <div class="image">
+            <img>
+        </div>
+        <div class="extra">
+            <h1>${_station.name}</h1>
+        </div>
+        <div>
+
+        </div>
+    </div>
+    <div class="card">
+        <div class="image">
+            <img>
+        </div>
+        <div class="extra">
+            <h3> Weather </h3>
+            <h4> ${_station.getWeather()} </h4>
+        </div>
+    </div>
+    <div class="card">
+        <div class="image">
+            <img>
+        </div>
+        <div class="extra">
+            <h3> Temp </h3>
+            <h4> ${_station.getTempCelsius() } °c <br>
+            ${_station.getTempFarenheit() } F </h4>
+        </div>
+    </div>
+    <div class="card">
+        <div class="image">
+            <img>
+        </div>
+        <div class="extra">
+            <h3> Wind </h3>
+            <h4> ${_station.getBeaufortSpeed()} bft <br> ${_station.getWindDir()} <br> ${_station.getWindChill()} </h4>
+        </div>
+    </div>
+    <div class="card">
+        <div class="image">
+            <img>
+        </div>
+        <div class="extra">
+            <h3> Pressure </h3>
+            <h4> ${_station.getLatestPressure()} hPa </h4>
+        </div>
+    </div>
+</div>
+</div>
