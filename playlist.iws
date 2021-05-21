@@ -1,10 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="51923699-39c6-4d83-a086-20c4057b0e92" name="Default Changelist" comment="">
+    <list default="true" id="51923699-39c6-4d83-a086-20c4057b0e92" name="Default Changelist" comment="Added YAML Data">
+      <change beforePath="$PROJECT_DIR$/app/controllers/Dashboard.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/Dashboard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/StationCtrl.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/StationCtrl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/Reading.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/Reading.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/Station.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/Station.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/dashboard.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/dashboard.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/main.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/main.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/tags/addstation.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/tags/addstation.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/views/tags/listLatest.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/tags/listLatest.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/conf/data.yml" beforeDir="false" afterPath="$PROJECT_DIR$/conf/data.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/playlist.ipr" beforeDir="false" afterPath="$PROJECT_DIR$/playlist.ipr" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/playlist.iws" beforeDir="false" afterPath="$PROJECT_DIR$/playlist.iws" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -15,8 +21,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="HTML File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -38,6 +44,12 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/views" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Anthony\Desktop\Weather Top\app\views" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
@@ -65,8 +77,16 @@
       <workItem from="1621286234958" duration="1607000" />
       <workItem from="1621368357166" duration="10669000" />
       <workItem from="1621459655845" duration="12148000" />
-      <workItem from="1621528816652" duration="15307000" />
+      <workItem from="1621528816652" duration="24015000" />
     </task>
+    <task id="LOCAL-00001" summary="Added YAML Data">
+      <created>1621550383046</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1621550383046</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -82,5 +102,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Added YAML Data" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added YAML Data" />
   </component>
 </project>

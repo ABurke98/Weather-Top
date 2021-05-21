@@ -12,10 +12,9 @@ public class StationCtrl extends Controller
 {
 
 
-    public static void index(Long id)
-    {
+    public static void index(Long id) {
         Station station = Station.findById(id);
-        Logger.info ("Station ID = " + id);
+        Logger.info("Station ID = " + id);
         render("station.html", station);
     }
 
@@ -36,5 +35,7 @@ public class StationCtrl extends Controller
         reading.delete();
         redirect("/stations/" + id);
     }
+
+
 
 }

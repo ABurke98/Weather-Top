@@ -13,12 +13,16 @@ import play.db.jpa.Model;
 public class Station extends Model
 {
   public String name;
+  public float latitude;
+  public float longitude;
   @OneToMany(cascade = CascadeType.ALL)
   public List<Reading> readings = new ArrayList<Reading>();
 
-  public Station(String name)
+  public Station(String name, float lat, float lng)
   {
     this.name = name;
+    this.latitude = lat;
+    this.longitude = lng;
   }
 
   public int getLatestWeather(){
@@ -179,6 +183,7 @@ public class Station extends Model
     }
     return windDir;
   }
+
 
 }
 

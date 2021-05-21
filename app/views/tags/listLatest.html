@@ -1,11 +1,9 @@
 <div class="ui inverted segment">
     <div class="ui inverted five cards">
     <div class="card">
-        <div class="image">
-            <img>
-        </div>
         <div class="extra">
-            <h1>${_station.name}</h1>
+            <h1>${_station.name}</h1> <i class="red huge map marker icon"></i>
+            <h4>Latitude : ${_station.latitude} <br> Longitude : ${_station.longitude}  </h4>
         </div>
         <div>
 
@@ -31,11 +29,8 @@
         </div>
     </div>
     <div class="card">
-        <div class="image">
-            <img>
-        </div>
         <div class="extra">
-            <h3> Wind </h3>
+            <h3> Wind </h3> <i class="huge green wind icon"></i>
             <h4> ${_station.getBeaufortSpeed()} bft <br> ${_station.getWindDir()} <br> Feels Like : ${_station.getWindChill()} °c </h4>
         </div>
     </div>
@@ -44,8 +39,9 @@
             <img>
         </div>
         <div class="extra">
-            <h3> Pressure </h3>
+            <h3> Pressure </h3> <i class="orange huge compress arrows alternate icon"></i>
             <h4> ${_station.getLatestPressure()} hPa </h4>
+
         </div>
     </div>
 </div>

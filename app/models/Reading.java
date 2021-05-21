@@ -22,4 +22,6 @@ public class Reading extends Model
   public float windSpeed;
   public float windDirection;
   public int pressure;
+
+
 }
