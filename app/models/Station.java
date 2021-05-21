@@ -15,14 +15,16 @@ public class Station extends Model
   public String name;
   public float latitude;
   public float longitude;
+
+
   @OneToMany(cascade = CascadeType.ALL)
   public List<Reading> readings = new ArrayList<Reading>();
 
-  public Station(String name, float lat, float lng)
+  public Station(String name, float latitude, float longitude)
   {
     this.name = name;
-    this.latitude = lat;
-    this.longitude = lng;
+    this.latitude = latitude;
+    this.longitude = longitude;
   }
 
   public int getLatestWeather(){
