@@ -15,6 +15,8 @@ public class Station extends Model
   public String name;
   public float latitude;
   public float longitude;
+  public static float maxPressure;
+
 
 
   @OneToMany(cascade = CascadeType.ALL)
@@ -26,6 +28,10 @@ public class Station extends Model
     this.latitude = latitude;
     this.longitude = longitude;
   }
+
+ // public String getName(){
+ //   return name;
+ // }
 
   public int getLatestWeather(){
     int code;
@@ -134,9 +140,10 @@ public class Station extends Model
         weather += weather + " Rain ";
       } else if (weatherCode == 700) {
         weather += weather + " Snow ";
-      } else if (weatherCode == 500) {
+      } else if (weatherCode == 800) {
         weather += weather + " Thunder ";
       } else {
+        weather += weather + " Partial clouds ";
       }
     }
     return weather;
@@ -186,6 +193,57 @@ public class Station extends Model
     return windDir;
   }
 
+  public String weatherIcon(){
+    int wCode = 0;
+    String wIcon =  " ";
+    if (readings.size() > 0) {
+      wCode = readings.get(readings.size() - 1).code;
+      if(wCode == 100){
+        wIcon = "huge sun outline icon";
+      }
+      else if(wCode == 200){
+        wIcon = "huge cloud sun icon";
+      }
+      else if(wCode == 300){
+        wIcon = "huge cloud icon";
+      }
+      else if(wCode == 400){
+        wIcon = "huge cloud rain icon";
+      }
+      else if(wCode == 500){
+        wIcon = "huge cloud showers heavy icon";
+      }
+      else if(wCode == 600){
+        wIcon = "huge cloud showers heavy icon";
+      }
+      else if(wCode == 700){
+        wIcon = "huge snowflake icon";
+      }
+      else if(wCode == 800){
+        wIcon = "huge bolt icon";
+      }
+      else{
+        wIcon = "huge cloud icon";
+      }
+    }
+     return wIcon;
+  }
 
+  public String tempIcon() {
+    float tCode = 0;
+    String tempIcon = " ";
+    if (readings.size() > 0) {
+      tCode = readings.get(readings.size() - 1).temperature;
+      if (tCode >= 11) {
+        tempIcon = "huge red temperature high icon";
+      } else if (tCode <= 10.99) {
+        tempIcon = "huge blue temperature low icon";
+      } else {
+        tempIcon = "huge temperature low icon";
+      }
+    }
+    return tempIcon;
+  }
 }
+
 
