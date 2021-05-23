@@ -1,24 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="51923699-39c6-4d83-a086-20c4057b0e92" name="Default Changelist" comment="Almost there">
-      <change afterPath="$PROJECT_DIR$/app/controllers/EditUser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/controllers/MemberUpdate.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/editUser.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/StationCtrl.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/StationCtrl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/Member.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/Member.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/Station.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/Station.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/about.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/signup.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/signup.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/start.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/start.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/tags/listLatest.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/tags/listLatest.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/tags/listLatestDash.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/tags/listLatestDash.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/tags/menu.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/tags/menu.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/tags/welcomemenu.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/tags/welcomemenu.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/conf/routes" beforeDir="false" afterPath="$PROJECT_DIR$/conf/routes" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/playlist.ipr" beforeDir="false" afterPath="$PROJECT_DIR$/playlist.ipr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/playlist.iws" beforeDir="false" afterPath="$PROJECT_DIR$/playlist.iws" afterDir="false" />
+    <list default="true" id="51923699-39c6-4d83-a086-20c4057b0e92" name="Default Changelist" comment="Release 3">
+      <change beforePath="$PROJECT_DIR$/playlist.iml" beforeDir="false" afterPath="$PROJECT_DIR$/weathertop.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/playlist.ipr" beforeDir="false" afterPath="$PROJECT_DIR$/weathertop.ipr" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/playlist.iws" beforeDir="false" afterPath="$PROJECT_DIR$/weathertop.iws" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -99,7 +85,7 @@
       <workItem from="1621528816652" duration="24527000" />
       <workItem from="1621559603727" duration="233000" />
       <workItem from="1621682350980" duration="20825000" />
-      <workItem from="1621704380481" duration="22537000" />
+      <workItem from="1621704380481" duration="23802000" />
     </task>
     <task id="LOCAL-00001" summary="Added YAML Data">
       <created>1621550383046</created>
@@ -129,7 +115,14 @@
       <option name="project" value="LOCAL" />
       <updated>1621727164310</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Release 3">
+      <created>1621733431664</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1621733431664</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -152,6 +145,7 @@
     <MESSAGE value="Few changes" />
     <MESSAGE value="Most recent working version" />
     <MESSAGE value="Almost there" />
-    <option name="LAST_COMMIT_MESSAGE" value="Almost there" />
+    <MESSAGE value="Release 3" />
+    <option name="LAST_COMMIT_MESSAGE" value="Release 3" />
   </component>
 </project>
