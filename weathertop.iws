@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="51923699-39c6-4d83-a086-20c4057b0e92" name="Default Changelist" comment="Release 3">
-      <change beforePath="$PROJECT_DIR$/playlist.iml" beforeDir="false" afterPath="$PROJECT_DIR$/weathertop.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/playlist.ipr" beforeDir="false" afterPath="$PROJECT_DIR$/weathertop.ipr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/playlist.iws" beforeDir="false" afterPath="$PROJECT_DIR$/weathertop.iws" afterDir="false" />
+    <list default="true" id="51923699-39c6-4d83-a086-20c4057b0e92" name="Default Changelist" comment="Release 3 (Bootstrap change)">
+      <change afterPath="$PROJECT_DIR$/system.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/conf/application.conf" beforeDir="false" afterPath="$PROJECT_DIR$/conf/application.conf" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,7 +84,7 @@
       <workItem from="1621528816652" duration="24527000" />
       <workItem from="1621559603727" duration="233000" />
       <workItem from="1621682350980" duration="20825000" />
-      <workItem from="1621704380481" duration="23802000" />
+      <workItem from="1621704380481" duration="24316000" />
     </task>
     <task id="LOCAL-00001" summary="Added YAML Data">
       <created>1621550383046</created>
@@ -122,7 +121,14 @@
       <option name="project" value="LOCAL" />
       <updated>1621733431664</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Release 3 (Bootstrap change)">
+      <created>1621737292483</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1621737292483</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -146,6 +152,7 @@
     <MESSAGE value="Most recent working version" />
     <MESSAGE value="Almost there" />
     <MESSAGE value="Release 3" />
-    <option name="LAST_COMMIT_MESSAGE" value="Release 3" />
+    <MESSAGE value="Release 3 (Bootstrap change)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Release 3 (Bootstrap change)" />
   </component>
 </project>
