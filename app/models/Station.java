@@ -14,8 +14,7 @@ public class Station extends Model {
   public String name;
   public float latitude;
   public float longitude;
-  public float maxPressure;
-  public float minPressure;
+
 
 
 
@@ -254,6 +253,44 @@ public class Station extends Model {
     return trendIcon;
   }
 
+  public String windTrendIcon() {
+    String trendIcon = " ";
+    if (readings.size() >= 3) {
+      float t1 = readings.get(readings.size() - 3).windSpeed;
+      float t2 = readings.get(readings.size() - 2).windSpeed;
+      float t3 = readings.get(readings.size() - 1).windSpeed;
+      if (t3 > t2 && t2 > t1) {
+        trendIcon += " huge long arrow alternate up icon ";
+      }
+      else if (t3 < t2 && t2 < t1) {
+        trendIcon += " huge long arrow alternate down icon ";
+      }
+      else {
+        trendIcon += " huge arrows alternate horizontal icon";
+      }
+    }
+    return trendIcon;
+  }
+
+  public String pressureTrendIcon() {
+    String trendIcon = " ";
+    if (readings.size() >= 3) {
+      float t1 = readings.get(readings.size() - 3).pressure;
+      float t2 = readings.get(readings.size() - 2).pressure;
+      float t3 = readings.get(readings.size() - 1).pressure;
+      if (t3 > t2 && t2 > t1) {
+        trendIcon += " huge long arrow alternate up icon ";
+      }
+      else if (t3 < t2 && t2 < t1) {
+        trendIcon += " huge long arrow alternate down icon ";
+      }
+      else {
+        trendIcon += " huge arrows alternate horizontal icon";
+      }
+    }
+    return trendIcon;
+  }
+
   public float getmaxP(){
 
     Reading maxPressure = null;
@@ -301,5 +338,54 @@ public class Station extends Model {
     }
     return minWind.windSpeed;
   }
+
+  public float getmaxWind(){
+
+    Reading maxWind = null;
+    if(readings.size() > 0){
+      maxWind = readings.get(0);
+      for(Reading reading : readings){
+        if (reading.windSpeed > maxWind.windSpeed){
+          maxWind = reading;
+        }
+      }
+    }
+    else{
+    }
+    return maxWind.windSpeed;
+  }
+
+  public float getmaxTemp(){
+
+    Reading maxTemp = null;
+    if(readings.size() > 0){
+      maxTemp = readings.get(0);
+      for(Reading reading : readings){
+        if (reading.temperature > maxTemp.temperature){
+          maxTemp = reading;
+        }
+      }
+    }
+    else{
+    }
+    return maxTemp.temperature;
+  }
+
+  public float getminTemp(){
+
+    Reading minTemp = null;
+    if(readings.size() > 0){
+      minTemp = readings.get(0);
+      for(Reading reading : readings){
+        if (reading.temperature < minTemp.temperature){
+          minTemp = reading;
+        }
+      }
+    }
+    else{
+    }
+    return minTemp.temperature;
+  }
+
 }
 

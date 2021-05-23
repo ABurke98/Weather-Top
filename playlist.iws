@@ -1,18 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="51923699-39c6-4d83-a086-20c4057b0e92" name="Default Changelist" comment="Most recent working version">
-      <change afterPath="$PROJECT_DIR$/app/views/tags/listLatestDash.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/Dashboard.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/Dashboard.java" afterDir="false" />
+    <list default="true" id="51923699-39c6-4d83-a086-20c4057b0e92" name="Default Changelist" comment="Almost there">
+      <change afterPath="$PROJECT_DIR$/app/controllers/EditUser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/controllers/MemberUpdate.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/editUser.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/controllers/StationCtrl.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/StationCtrl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/Reading.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/Reading.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/Member.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/Member.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/models/Station.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/Station.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/dashboard.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/dashboard.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/tags/addreport.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/tags/addreport.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/about.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/signup.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/signup.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/start.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/start.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/views/tags/listLatest.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/tags/listLatest.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/tags/listreadings.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/tags/listreadings.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/conf/data.yml" beforeDir="false" afterPath="$PROJECT_DIR$/conf/data.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/tags/listLatestDash.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/tags/listLatestDash.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/tags/menu.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/tags/menu.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/tags/welcomemenu.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/tags/welcomemenu.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/conf/routes" beforeDir="false" afterPath="$PROJECT_DIR$/conf/routes" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/playlist.ipr" beforeDir="false" afterPath="$PROJECT_DIR$/playlist.ipr" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/playlist.iws" beforeDir="false" afterPath="$PROJECT_DIR$/playlist.iws" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -23,8 +28,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="HTML File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -94,7 +99,7 @@
       <workItem from="1621528816652" duration="24527000" />
       <workItem from="1621559603727" duration="233000" />
       <workItem from="1621682350980" duration="20825000" />
-      <workItem from="1621704380481" duration="16121000" />
+      <workItem from="1621704380481" duration="22537000" />
     </task>
     <task id="LOCAL-00001" summary="Added YAML Data">
       <created>1621550383046</created>
@@ -117,7 +122,14 @@
       <option name="project" value="LOCAL" />
       <updated>1621707104411</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Almost there">
+      <created>1621727164310</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1621727164310</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -139,6 +151,7 @@
     <MESSAGE value="Added YAML Data" />
     <MESSAGE value="Few changes" />
     <MESSAGE value="Most recent working version" />
-    <option name="LAST_COMMIT_MESSAGE" value="Most recent working version" />
+    <MESSAGE value="Almost there" />
+    <option name="LAST_COMMIT_MESSAGE" value="Almost there" />
   </component>
 </project>

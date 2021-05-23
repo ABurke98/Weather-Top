@@ -22,13 +22,14 @@
         <div class="extra">
             <h3> Temp </h3> <i class="${_station.tempIcon()}"></i> <i class="blue ${_station.tempTrendIcon()}"> </i>
             <h4> ${_station.getTempCelsius() } °c <br>
-            ${_station.getTempFarenheit() } F </h4>
+            ${_station.getTempFarenheit() } F <br> Max Temp : ${_station.getmaxTemp()}° <br> Min Temp : ${_station.getminTemp()}°c</h4>
         </div>
     </div>
     <div class="card">
         <div class="extra">
-            <h3> Wind </h3> <i class="huge green wind icon"></i>
-            <h4> ${_station.getBeaufortSpeed()} bft <br> ${_station.getWindDir()} <br> Feels Like : ${_station.getWindChill()} °c <br> Min Wind : ${_station.getminWind()} kph </h4>
+            <h3> Wind </h3> <i class="huge green wind icon"></i> <i class="green ${_station.windTrendIcon()}"></i>
+            <h4> ${_station.getBeaufortSpeed()} bft <br> ${_station.getWindDir()} <br> Feels Like : ${_station.getWindChill()} °c
+                <br> Min Wind : ${_station.getminWind()} kph <br> Max Wind : ${_station.getmaxWind()} kph  </h4>
         </div>
     </div>
     <div class="card">
@@ -36,8 +37,8 @@
             <img>
         </div>
         <div class="extra">
-            <h3> Pressure </h3> <i class="orange huge compress arrows alternate icon"></i>
-            <h4> ${_station.getLatestPressure()} hPa <br> Max Pressure : ${_station.getmaxP()} <br> Min Pressure : ${_station.getminP()}  </h4>
+            <h3> Pressure </h3> <i class="orange huge compress arrows alternate icon"></i><i class="orange ${_station.pressureTrendIcon()}"></i>
+            <h4> ${_station.getLatestPressure()} hPa <br> Max Pressure : ${_station.getmaxP()} hpa <br> Min Pressure : ${_station.getminP()} hpa  </h4>
         </div>
     </div>
 </div>

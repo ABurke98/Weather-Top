@@ -22,7 +22,7 @@ public class StationCtrl extends Controller
 
     public static String getDate(){
         Date date = new Date();
-        SimpleDateFormat DateFor = new SimpleDateFormat("dd/MM/yyyy hh:mm:ss");
+        SimpleDateFormat DateFor = new SimpleDateFormat("dd/MM/yyyy  hh:mm:ss");
         String stringDate= DateFor.format(date);
         return stringDate;
     }

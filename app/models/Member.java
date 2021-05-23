@@ -1,5 +1,7 @@
 package models;
 
+import controllers.Accounts;
+import play.Logger;
 import play.db.jpa.Model;
 
 import javax.persistence.CascadeType;
@@ -25,6 +27,16 @@ public class Member extends Model
         this.lastname = lastname;
         this.email = email;
         this.password = password;
+    }
+
+    public static void updateUser(String firstname, String lastname, String email, String password){
+        Logger.info("Editing user account");
+        Member member = Accounts.getLoggedInMember();
+        member.firstname = firstname;
+        member.lastname = lastname;
+        member.email = email;
+        member.password = password;
+        member.save();
     }
 
     public static Member findByEmail(String email)

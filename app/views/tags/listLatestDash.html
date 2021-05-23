@@ -1,44 +1,45 @@
 <div class="ui inverted segment">
     <div class="ui inverted five cards">
-    <div class="card">
-        <div class="extra">
-            <h1>${_station.name}</h1> <i class="red huge map marker icon"></i>
-            <h4>Latitude : ${_station.latitude} <br> Longitude : ${_station.longitude}  </h4>
+        <div class="card">
+            <div class="extra">
+                <h1>${_station.name}</h1> <i class="red huge map marker icon"></i>
+                <h4>Latitude : ${_station.latitude} <br> Longitude : ${_station.longitude}  </h4>
+            </div>
+        </div>
+        <div class="card">
+            <div class="image">
+                <img>
+            </div>
+            <div class="extra">
+                <h3> Weather </h3>
+                <h4>  </h4>
+            </div>
+        </div>
+        <div class="card">
+            <div class="image">
+                <img>
+            </div>
+            <div class="extra">
+                <h3> Temp </h3> <i class="${_station.tempIcon()}"></i>
+                <h4> 0°c <br>
+                     0°F <br> Max Temp : 0°c <br> Min Temp : 0°c</h4>
+            </div>
+        </div>
+        <div class="card">
+            <div class="extra">
+                <h3> Wind </h3> <i class="huge green wind icon"></i>
+                <h4> 0 bft <br> Feels Like : 0°c
+                    <br> Min Wind : 0 kph <br> Max Wind : 0 kph  </h4>
+            </div>
+        </div>
+        <div class="card">
+            <div class="image">
+                <img>
+            </div>
+            <div class="extra">
+                <h3> Pressure </h3> <i class="orange huge compress arrows alternate icon"></i>
+                <h4> 0 hPa <br> Max Pressure : 0 hpa <br> Min Pressure : 0 hpa  </h4>
+            </div>
         </div>
     </div>
-    <div class="card">
-        <div class="image">
-            <img>
-        </div>
-        <div class="extra">
-            <h3> Weather </h3>
-            <h4> </h4>
-        </div>
-    </div>
-    <div class="card">
-        <div class="image">
-            <img>
-        </div>
-        <div class="extra">
-            <h3> Temp </h3> <i class="${_station.tempIcon()}"></i>
-            <h4> 0°c <br>
-            0°F </h4>
-        </div>
-    </div>
-    <div class="card">
-        <div class="extra">
-            <h3> Wind </h3> <i class="huge green wind icon"></i>
-            <h4> 0 bft <br> <br> Feels Like : 0°c </h4>
-        </div>
-    </div>
-    <div class="card">
-        <div class="image">
-            <img>
-        </div>
-        <div class="extra">
-            <h3> Pressure </h3> <i class="orange huge compress arrows alternate icon"></i>
-            <h4> 0 hPa <br>  </h4>
-        </div>
-    </div>
-</div>
 </div>
