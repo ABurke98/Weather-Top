@@ -393,7 +393,7 @@ public class Station extends Model {
     if (readings.size() >= 1) {
       minTemp = readings.get(0).temperature;
       for (int i = 1; i < readings.size(); i++) {
-        if (readings.get(i).temperature > minTemp) {
+        if (readings.get(i).temperature < minTemp) {
           minTemp = readings.get(i).temperature;
         }
       }
