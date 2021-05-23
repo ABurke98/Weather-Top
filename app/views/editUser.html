@@ -1,8 +1,8 @@
-#{extends 'main.html' /}
+#{extends 'main.html' /}                <!--attaching this view to main.html for display-->
 #{set title:'edit account' /}
 #{welcomemenu id:"edit account"/}
 
-<form class="ui stacked segment form" action="/members/editUser" method="POST">
+<form class="ui stacked segment form" action="/members/editUser" method="POST">       <!--Form attached to a route for updating the member account-->
     <div class="four fields">
         <div class="field">
             <label>First Name</label>

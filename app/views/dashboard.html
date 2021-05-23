@@ -1,21 +1,21 @@
-#{extends 'main.html' /}
+#{extends 'main.html' /}                 <!--attaching this view to main.html for display-->
 #{set title:'Dashboard' /}
 
 #{menu id:"dashboard"/}
 
 
-#{list items:stations, as:'station'}
+#{list items:stations, as:'station'}        <!--Looping through the stations array list to display the stations on the dashboard-->
   <section class="ui stacked segment">
     <h2 class="ui stacked header">
       ${station.name}
-      #{listLatestDash station:station /}
+      #{listLatestDash station:station /}       <!--Loading in our blank cards for the dashboard display-->
     </h2>
-    <a href="/stations/${station.id}" class="ui icon button">
+    <a href="/stations/${station.id}" class="ui icon button"> <!--Button for opening the station view using a route-->
       <i class=" icon open folder"></i>
     </a>
-    <a href="/dashboard/deletestation/${station.id}" class="ui icon button">
+    <a href="/dashboard/deletestation/${station.id}" class="ui icon button">  <!--Button for deleting a station using a route-->
       <i class=" icon trash"></i>
     </a>
   </section>
-#{/list}
-#{addstation /}
+#{/list}   <!--Ending the loop-->
+#{addstation /}   <!--including the addStation tag so that we can have a form on the dashboard to add new stations-->

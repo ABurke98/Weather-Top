@@ -1,10 +1,10 @@
-#{extends 'main.html' /}
+#{extends 'main.html' /}                   <!--attaching this view to main.html for display-->
 #{set title:'Signup' /}
 #{welcomemenu id:"signup"/}
 
 <div class="ui two column grid basic middle aligned segment">
     <div class="column">
-        <form class="ui stacked segment form" action="/register" method="POST">
+        <form class="ui stacked segment form" action="/register" method="POST">     <!--Our form for registering a new user, attached to a route-->
             <h3 class="ui header">Register</h3>
             <div class="two fields">
                 <div class="field">

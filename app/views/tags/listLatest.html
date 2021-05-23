@@ -1,8 +1,8 @@
-<div class="ui inverted segment">
+<div class="ui inverted segment">           <!--Our latest weather cards that are displayed when in a station view-->
     <div class="ui inverted five cards">
     <div class="card">
         <div class="extra">
-            <h1>${_station.name}</h1> <i class="red huge map marker icon"></i>
+            <h1>${_station.name}</h1> <i class="red huge map marker icon"></i>                   <!--Getting data from the station model to display on the card-->
             <h4>Latitude : ${_station.latitude} <br> Longitude : ${_station.longitude}  </h4>
         </div>
     </div>
@@ -11,7 +11,7 @@
             <img>
         </div>
         <div class="extra">
-            <h3> Weather </h3> <i class="blue ${_station.weatherIcon()}"></i>
+            <h3> Weather </h3> <i class="blue ${_station.weatherIcon()}"></i>   <!--Getting data from the station model to display on the card-->
             <h4> ${_station.getWeather()} </h4>
         </div>
     </div>
@@ -20,14 +20,14 @@
             <img>
         </div>
         <div class="extra">
-            <h3> Temp </h3> <i class="${_station.tempIcon()}"></i> <i class="blue ${_station.tempTrendIcon()}"> </i>
+            <h3> Temp </h3> <i class="${_station.tempIcon()}"></i> <i class="blue ${_station.tempTrendIcon()}"> </i>  <!--Getting data from the station model to display on the card-->
             <h4> ${_station.getTempCelsius() } °c <br>
             ${_station.getTempFarenheit() } F <br> Max Temp : ${_station.getmaxTemp()}° c <br> Min Temp : ${_station.getminTemp()}°c</h4>
         </div>
     </div>
     <div class="card">
         <div class="extra">
-            <h3> Wind </h3> <i class="huge green wind icon"></i> <i class="green ${_station.windTrendIcon()}"></i>
+            <h3> Wind </h3> <i class="huge green wind icon"></i> <i class="green ${_station.windTrendIcon()}"></i>  <!--Getting data from the station model to display on the card-->
             <h4> ${_station.getBeaufortSpeed()} bft <br> ${_station.getWindDir()} <br> Feels Like : ${_station.getWindChill()} °c
                 <br> Min Wind : ${_station.getminWind()} kph <br> Max Wind : ${_station.getmaxWind()} kph  </h4>
         </div>
@@ -37,7 +37,7 @@
             <img>
         </div>
         <div class="extra">
-            <h3> Pressure </h3> <i class="orange huge compress arrows alternate icon"></i><i class="orange ${_station.pressureTrendIcon()}"></i>
+            <h3> Pressure </h3> <i class="orange huge compress arrows alternate icon"></i><i class="orange ${_station.pressureTrendIcon()}"></i> <!--Getting data from the station model to display on the card-->
             <h4> ${_station.getLatestPressure()} hPa <br> Max Pressure : ${_station.getmaxP()} hpa <br> Min Pressure : ${_station.getminP()} hpa  </h4>
         </div>
     </div>

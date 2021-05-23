@@ -1,13 +1,13 @@
-#{extends 'main.html' /}
+#{extends 'main.html' /}                       <!--attaching this view to main.html for display-->
 #{set title:'Station' /}
 
 #{menu id:"dashboard"/}
 
 <section class="ui segment">
     <h2 class="ui header">
-        ${station.name}
+        ${station.name}               <!--Grabbing the station name for display-->
     </h2>
-    #{listLatest station:station /}
-    #{listreadings station:station /}
-    #{addreport station:station /}
+    #{listLatest station:station /}            <!--getting the latest cards and displaying station data on them-->
+    #{listreadings station:station /}           <!--getting the readings from within the station and displaying them-->
+    #{addreport station:station /}               <!--including our form at the bottom to add more readings-->
 </section>

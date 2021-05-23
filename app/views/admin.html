@@ -1,4 +1,4 @@
-#{extends 'main.html' /}
+#{extends 'main.html' /}         <!--attaching this view to main.html for display-->
 #{set title:'Dashboard' /}
 
 #{menu id:"admin"/}
@@ -7,7 +7,7 @@
     <h2 class="ui header">
         All Known readings in the database:
     </h2>
-    <table class="ui fixed table">
+    <table class="ui fixed table">               <!--Creating a table for the admin view which shows all of our readings in the database on the page-->
         <thead>
         <tr>
             <th>ID</th>
@@ -18,7 +18,7 @@
         </tr>
         </thead>
         <tbody>
-        #{list items:readings, as:'reading'}
+        #{list items:readings, as:'reading'}    <!--Looping through the readings array list-->
         <tr>
             <td>
                 ${reading.id}
@@ -36,7 +36,7 @@
                 ${reading.pressure}
             </td>
         </tr>
-        #{/list}
+        #{/list}     <!--end loop-->
         </tbody>
     </table>
 </section>

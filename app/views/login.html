@@ -1,10 +1,10 @@
-#{extends 'main.html' /}
+#{extends 'main.html' /}                                     <!--attaching this view to main.html for display-->
 #{set title:'login' /}
 #{welcomemenu id:"login"/}
 
 <div class="ui two column middle aligned grid basic segment">
     <div class="column">
-        <form class="ui stacked segment form" action="/authenticate" method="POST">
+        <form class="ui stacked segment form" action="/authenticate" method="POST">     <!--This is our log in form attached to a route to call the Authenticate function is Accounts-->
             <h3 class="ui header">Log-in</h3>
             <div class="field">
                 <label>Email</label> <input placeholder="Email" name="email">

@@ -1,4 +1,4 @@
-<table class="ui fixed table">
+<table class="ui fixed table"> <!--A fomantic table for displaying data on the station page-->
   <thead>
     <tr>
       <th>Date</th>
@@ -11,7 +11,7 @@
     </tr>
   </thead>
   <tbody>
-    #{list items:_station.readings, as:'reading'}
+    #{list items:_station.readings, as:'reading'}     <!--Looping through the data from the station model to display in the table-->
       <tr>
         <td>
           ${reading.date}
@@ -32,9 +32,9 @@
           ${reading.pressure}
         </td>
         <td>
-          <a href="/stations/${_station.id}/deletereading/${reading.id}" class="ui tiny red button">Delete Reading</a>
+          <a href="/stations/${_station.id}/deletereading/${reading.id}" class="ui tiny red button">Delete Reading</a>  <!--A button connected to a route to delete a reading from the station-->
         </td>
       </tr>
-    #{/list}
+    #{/list}  <!--Ending the loop-->
   </tbody>
 </table>
