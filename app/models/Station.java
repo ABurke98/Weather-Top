@@ -1,7 +1,9 @@
 package models;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
+import java.lang.Throwable;
 
 import javax.persistence.CascadeType;
 import javax.persistence.Entity;
@@ -9,11 +11,20 @@ import javax.persistence.OneToMany;
 
 import play.db.jpa.Model;
 
+
+
+
+
+
 @Entity
 public class Station extends Model {
   public String name;
   public float latitude;
   public float longitude;
+
+
+
+
 
 
 
@@ -291,101 +302,109 @@ public class Station extends Model {
     return trendIcon;
   }
 
-  public float getmaxP(){
-
-    Reading maxPressure = null;
-    if(readings.size() > 0){
-      maxPressure = readings.get(0);
-      for(Reading reading : readings){
-        if (reading.pressure > maxPressure.pressure){
-          maxPressure = reading;
+  public float getmaxP() {
+    Reading maxPressureReading = null;
+    float maxPressure = 0;
+    if (readings.size() >= 1) {
+      maxPressure = readings.get(0).pressure;
+      for (int i = 1; i < readings.size(); i++) {
+        if (readings.get(i).pressure > maxPressure) {
+          maxPressure = readings.get(i).pressure;
         }
       }
     }
     else{
+      maxPressure = 0;
     }
-    return maxPressure.pressure;
+    return maxPressure;
   }
 
-  public float getminP(){
-
-    Reading minPressure = null;
-    if(readings.size() > 0){
-      minPressure = readings.get(0);
-      for(Reading reading : readings){
-        if (reading.pressure < minPressure.pressure){
-          minPressure = reading;
+  public float getminP() {
+    Reading minPressureReading = null;
+    float minPressure = 0;
+    if (readings.size() >= 1) {
+      minPressure = readings.get(0).pressure;
+      for (int i = 1; i < readings.size(); i++) {
+        if (readings.get(i).pressure < minPressure) {
+          minPressure = readings.get(i).pressure;
         }
       }
     }
     else{
+      minPressure = 0;
     }
-    return minPressure.pressure;
+    return minPressure;
   }
 
-  public float getminWind(){
-
-    Reading minWind = null;
-    if(readings.size() > 0){
-      minWind = readings.get(0);
-      for(Reading reading : readings){
-        if (reading.windSpeed < minWind.windSpeed){
-          minWind = reading;
+  public float getminWind() {
+    Reading minWindReading = null;
+    float minWind = 0;
+    if (readings.size() >= 1) {
+      minWind = readings.get(0).windSpeed;
+      for (int i = 1; i < readings.size(); i++) {
+        if (readings.get(i).windSpeed < minWind) {
+          minWind = readings.get(i).windSpeed;
         }
       }
     }
     else{
+      minWind = 0;
     }
-    return minWind.windSpeed;
+    return minWind;
   }
 
-  public float getmaxWind(){
-
-    Reading maxWind = null;
-    if(readings.size() > 0){
-      maxWind = readings.get(0);
-      for(Reading reading : readings){
-        if (reading.windSpeed > maxWind.windSpeed){
-          maxWind = reading;
+  public float getmaxWind() {
+    Reading minWindReading = null;
+    float maxWind = 0;
+    if (readings.size() >= 1) {
+      maxWind = readings.get(0).windSpeed;
+      for (int i = 1; i < readings.size(); i++) {
+        if (readings.get(i).windSpeed > maxWind) {
+          maxWind = readings.get(i).windSpeed;
         }
       }
     }
     else{
+      maxWind = 0;
     }
-    return maxWind.windSpeed;
+    return maxWind;
   }
 
-  public float getmaxTemp(){
-
-    Reading maxTemp = null;
-    if(readings.size() > 0){
-      maxTemp = readings.get(0);
-      for(Reading reading : readings){
-        if (reading.temperature > maxTemp.temperature){
-          maxTemp = reading;
+  public float getmaxTemp() {
+    Reading maxTempReading = null;
+    float maxTemp = 0;
+    if (readings.size() >= 1) {
+      maxTemp = readings.get(0).temperature;
+      for (int i = 1; i < readings.size(); i++) {
+        if (readings.get(i).temperature > maxTemp) {
+          maxTemp = readings.get(i).temperature;
         }
       }
     }
     else{
+      maxTemp = 0;
     }
-    return maxTemp.temperature;
+    return maxTemp;
   }
 
-  public float getminTemp(){
-
-    Reading minTemp = null;
-    if(readings.size() > 0){
-      minTemp = readings.get(0);
-      for(Reading reading : readings){
-        if (reading.temperature < minTemp.temperature){
-          minTemp = reading;
+  public float getminTemp() {
+    Reading minTempReading = null;
+    float minTemp = 0;
+    if (readings.size() >= 1) {
+      minTemp = readings.get(0).temperature;
+      for (int i = 1; i < readings.size(); i++) {
+        if (readings.get(i).temperature > minTemp) {
+          minTemp = readings.get(i).temperature;
         }
       }
     }
     else{
+      minTemp = 0;
     }
-    return minTemp.temperature;
+    return minTemp;
   }
+
+
 
 }
 
